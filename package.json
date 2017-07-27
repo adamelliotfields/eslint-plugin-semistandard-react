@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-semistandard-react",
+  "version": "4.0.0",
+  "description": "Plugins for eslint-config-semistandard-react.",
+  "main": "index.js",
+  "repository": "https://github.com/adamelliotfields/eslint-plugin-semistandard-react.git",
+  "author": "Adam Fields <adam.elliot.fields@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
