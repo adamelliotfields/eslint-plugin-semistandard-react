@@ -14,13 +14,13 @@ See [`CHANGELOG.md`](https://github.com/adamelliotfields/eslint-plugin-semistand
 **NPM:**
 
 ```bash
-npm install --save-dev eslint babel-eslint eslint-config-semistandard-react eslint-plugin-semistandard-react
+npm install -D eslint babel-eslint eslint-config-semistandard-react eslint-plugin-semistandard-react
 ```
 
 **Yarn:**
 
 ```bash
-yarn add --dev eslint babel-eslint eslint-config-semistandard-react eslint-plugin-semistandard-react
+yarn add -D eslint babel-eslint eslint-config-semistandard-react eslint-plugin-semistandard-react
 ```
 
 **Globally:**
@@ -32,9 +32,11 @@ yarn add --dev eslint babel-eslint eslint-config-semistandard-react eslint-plugi
 
 This plugin was intended to be used with [eslint-config-semistandard-react](https://github.com/adamelliotfields/eslint-config-semistandard-react), which has more information on configuring your `eslintrc`.
 
-With that said, you're free to use it with any ESLint config. Add `semistandard-react` to your plugins array, and any rules to your rules object.
+With that said, you're free to use it with any ESLint config. Add `semistandard-react` to your
+plugins array, and any rules to your rules object.
 
-You do **NOT** have to do this if you're already extending the Semistandard React config (unless of course you want to override a rule).
+You do **NOT** have to do this if you're already extending the Semistandard React config (unless of
+course you want to override a rule).
 
 For example:
 
@@ -95,4 +97,3 @@ The following rules are exported:
  - [@xjamundx](https://github.com/xjamundx): [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise)
  - [@yannickcr](https://github.com/yannickcr): [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react)
  - [@xjamundx](https://github.com/xjamundx): [`eslint-plugin-standard`](https://github.com/xjamundx/eslint-plugin-standard)
- 
