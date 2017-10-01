@@ -7,11 +7,14 @@ module.exports = {
     'first': require('eslint-plugin-import/lib/rules/first'),
     'no-duplicates': require('eslint-plugin-import/lib/rules/no-duplicates'),
     'no-webpack-loader-syntax': require('eslint-plugin-import/lib/rules/no-webpack-loader-syntax'),
+
     /* eslint-plugin-node */
     'no-deprecated-api': require('eslint-plugin-node/lib/rules/no-deprecated-api'),
     'process-exit-as-throw': require('eslint-plugin-node/lib/rules/process-exit-as-throw'),
+
     /* eslint-plugin-promise */
     'param-names': require('eslint-plugin-promise/rules/param-names'),
+
     /* eslint-plugin-react */
     'jsx-boolean-value': require('eslint-plugin-react/lib/rules/jsx-boolean-value'),
     'jsx-curly-spacing': require('eslint-plugin-react/lib/rules/jsx-curly-spacing'),
@@ -29,6 +32,7 @@ module.exports = {
     'no-unused-prop-types': require('eslint-plugin-react/lib/rules/no-unused-prop-types'),
     'prop-types': require('eslint-plugin-react/lib/rules/prop-types'),
     'self-closing-comp': require('eslint-plugin-react/lib/rules/self-closing-comp'),
+
     /* eslint-plugin-standard */
     'array-bracket-even-spacing': require('eslint-plugin-standard/rules/array-bracket-even-spacing.js'),
     'computed-property-even-spacing': require('eslint-plugin-standard/rules/computed-property-even-spacing.js'),
