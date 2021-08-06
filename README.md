@@ -1,99 +1,45 @@
-# ESLint Plugin Semistandard React
-> All the necessary plugins for eslint-config-semistandard-react.
+# DEPRECATED
 
-This file exports all the necessary rules for [eslint-config-semistandard-react](https://github.com/adamelliotfields/eslint-config-semistandard-react) to facilitate easier installs.
+This plugin and its corresponding config were just convenience methods for installing Standard style
+with semicolons (AKA "SemiStandard") and additional React rules.
 
+These were never updated and were meant to be used with a very old version of ESLint. In other
+words, you should definitely not be using it today.
 
-### Changelog
+If you'd still like to use SemiStandard style with React, simply run the following commands in your
+terminal.
 
-See [`CHANGELOG.md`](https://github.com/adamelliotfields/eslint-plugin-semistandard-react/blob/master/CHANGELOG.md).
-
-
-### Install
-
-**NPM:**
+First, uninstall my config and plugin:
 
 ```bash
-npm install -D eslint babel-eslint eslint-config-semistandard-react eslint-plugin-semistandard-react
+npm uninstall \
+eslint-config-semistandard-react \
+eslint-plugin-semistandard-react
 ```
 
-**Yarn:**
+Next, install the required configs and plugins for SemiStandard React:
 
-```bash
-yarn add -D eslint babel-eslint eslint-config-semistandard-react eslint-plugin-semistandard-react
+```
+npm install --save-dev \
+eslint \
+eslint-config-standard \
+eslint-config-semistandard \
+eslint-config-standard-jsx \
+eslint-config-standard-react \
+eslint-plugin-import \
+eslint-plugin-node \
+eslint-plugin-promise \
+eslint-plugin-react
 ```
 
-**Globally:**
-
-`npm install --global ...` **or** `yarn global add ...`
-
-
-### Usage
-
-This plugin was intended to be used with [eslint-config-semistandard-react](https://github.com/adamelliotfields/eslint-config-semistandard-react), which has more information on configuring your `eslintrc`.
-
-With that said, you're free to use it with any ESLint config. Add `semistandard-react` to your
-plugins array, and any rules to your rules object.
-
-You do **NOT** have to do this if you're already extending the Semistandard React config (unless of
-course you want to override a rule).
-
-For example:
+Finally, update your `.eslintrc` so it looks like this:
 
 ```json
 {
-  "plugins": [
-    "semistandard-react"
-  ],
-  "rules": {
-    "semistandard-react/jsx-curly-spacing": ["error", "never"],
-    "semistandard-react/jsx-equals-spacing": ["error", "never"]
-  }
+  "extends": [
+    "semistandard",
+    "standard-jsx",
+    "standard-react"
+  ]
 }
 ```
-
-
-### Rules
-
-The following rules are exported:
-
- - **`eslint-plugin-import`**
-   - `export`
-   - `first`
-   - `no-duplicates`
-   - `no-webpack-loader-syntax`
- - **`eslint-plugin-node`**
-   - `no-deprecated-api`
-   - `process-exit-as-throw`
- - **`eslint-plugin-promise`**
-   - `param-names`
- - **`eslint-plugin-react`**
-   - `jsx-boolean-value`
-   - `jsx-curly-spacing`
-   - `jsx-equals-spacing`
-   - `jsx-indent`
-   - `jsx-indent-props`
-   - `jsx-no-bind`
-   - `jsx-no-duplicate-props`
-   - `jsx-no-undef`
-   - `jsx-tag-spacing`
-   - `jsx-uses-react`
-   - `jsx-uses-vars`
-   - `no-did-update-set-state`
-   - `no-unknown-property`
-   - `no-unused-prop-types`
-   - `prop-types`
-   - `self-closing-comp`
- - **`eslint-plugin-standard`**
-   - `array-bracket-even-spacing`
-   - `computed-property-even-spacing`
-   - `no-callback-literal`
-   - `object-curly-even-spacing`
-   
-
-### Acknowledgements
- - [@benmosher](https://github.com/benmosher): [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import)
- - [@mysticatea](https://github.com/mysticatea): [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node)
- - [@xjamundx](https://github.com/xjamundx): [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise)
- - [@yannickcr](https://github.com/yannickcr): [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react)
- - [@xjamundx](https://github.com/xjamundx): [`eslint-plugin-standard`](https://github.com/xjamundx/eslint-plugin-standard)
