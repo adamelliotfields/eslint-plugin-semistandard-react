@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 requires a new rule from a plugin.
  - Patch versions will be bumped for bug fixes and documentation changes.
 
+### [v4.1.1](https://github.com/adamelliotfields/eslint-plugin-semistandard-react/releases/tag/v4.1.1)
+> Released August 6, 2021
+
+- Updated `README.md`.
+
 ### [v4.1.0](https://github.com/adamelliotfields/eslint-plugin-semistandard-react/releases/tag/v4.1.0)
 > Released September 30, 2017
 
